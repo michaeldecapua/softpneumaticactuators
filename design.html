@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Design</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">AMDS Project</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="methodology.html">Methodology</a></li>
+								<li><a href="design.html">Design</a></li>
+								<li><a href="simulation.html">Simulation</a></li>
+								<li><a href="optimization.html">Optimization</a></li>
+								<li><a href="fitness_function.html">Fitness Function</a></li>
+								<li><a href="fabrication.html">Fabrication</a></li>
+								<li><a href="reference.html">Reference</a></li>
+								<li><a href="appendix.html">Appendix</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Design</a></h2>
+										<p>A case study for testing GA's on soft robotic actuators.</p>
+									</div>
+								</header>
+								<p> The mechanical design for the soft robotic hand has been initiated in ABAQUS as importing part files from 
+									any other 3D CAD (like Solidworks) might have issues in ABAQUS. The design consisted of a base rectangle 
+									which is connected with 3 rectangle shaped fingers (4 fingers were our target, due to time constraints, 3 
+									fingers were taken into consideration). The designed soft robotic hand has been shown below in Figure 3a.
+									 A base design for the robotic hand setup is drawn along with the dimensions shown in Figure 3b. 
+									</p>
+								<p>T represents the thickness of the material with a constant value of 2mm</p>
+								<p>H is the height of the actuator, ranging from 10mm to 25mm</p>
+								<center><img src="images/Design1.jpg" width = "600" height = "400" alt="" />
+								<p>FIG 3a: The designed 3 fingered robotic hand</p>
+								<img src="images/DesignPage1.jpg" width = "600" height = "400" alt="" />
+								<p>FIG 3b: Dimensions for the 3 fingered robotic hand base design</p></center>
+								<p>After completing the outer cavity, the inner cavity created for air pressure was created with an initial 
+									thickness of 2mm and which has been depicted in figure 4a, and the specified 2D drawing with dimensions 
+									has been mentioned in Figure 4b.</p>
+								<center><img src="images/Photo2.jpg" width = "600" height = "400" alt="" />
+								<p>FIG 4a: The inner design of 3 fingered robotic hand for air pressure flow</p>
+								<img src="images/DesignPage2.jpg" width = "600" height = "400" alt="" />
+								<p>FIG 4b: The dimension for the inner design of 3 fingered robotic hand</p></center>
+
+								<p>In order to optimize the robotic hand, the design is created in such a way that there are control 
+									variables that will be randomized in order to check for the best possible solution through NSGA II.
+									 The control state variables were selected and figure 5 depicts the control variables for the design:
+								</p>
+								<p>La represents the length of the actuator, which ranges from 40mm to 80mm
+								</p>
+								<p>Lc represents the length of the chamber (Finger width) ranging from 8mm to 30mm</p>
+								<p>Lk represents the length between each finger, which depends on the length of the actuator and the chamber
+								</p>
+
+								<center><img src="images/Presentation2.jpg" width = "600" height = "400" alt="" />
+								<p>FIG 5: control variables for the fitness functions for 3 fingered robotic hand</p></center>
+
+								<footer>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<p class="copyright">&copy; By: Michael DeCapua, Santhosh Lakshmanan, Subhraneel Sarkar, and Vijay Veerisetty.
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

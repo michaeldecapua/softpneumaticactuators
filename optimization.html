@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Optimization</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">AMDS Project</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="methodology.html">Methodology</a></li>
+								<li><a href="design.html">Design</a></li>
+								<li><a href="simulation.html">Simulation</a></li>
+								<li><a href="optimization.html">Optimization</a></li>
+								<li><a href="fitness_function.html">Fitness Function</a></li>
+								<li><a href="fabrication.html">Fabrication</a></li>
+								<li><a href="reference.html">Reference</a></li>
+								<li><a href="appendix.html">Appendix</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Optimization</a></h2>
+										<p>A case study for testing GA's on soft robotic actuators.</p>
+									</div>
+								</header>
+								
+								<p>Overview of GA: A Genetic Algorithm is used to optimize the design of the soft actuators. 
+									Our team has developed a genetic algorithm that optimizes a set of variables to our mechanical structure. 
+									Listed as the following are the steps of a genetic algorithm approach to be followed.
+									</p>
+								<p>Selection</p>
+								<ul>
+									<li>It is the process where a number of individuals are selected from the population.</li>
+									<li>Since the intake pressure is delivered from an external device, the objective is to minimize the intake pressure required.</li>
+								</ul>
+								<p>Crossover</p>
+								<ul>
+									<li>This process exchanges genes from the individuals to produce offspring with a new set of chromosomes.</li>
+								</ul>
+								<p>Mutation</p>
+								<ul>
+									<li>This process randomly chooses a subset of chromosomes and alters their values.
+									</li>
+								</ul>
+								<p>Through this optimization method, our group has studies way to optimize a list of varibles to understand a top fitness result to our model.</p>
+
+								<p>OverView of Non-Dominated Sorting Genetic Algorithm (NSGA) II: NSGA-II is one of the most popular multi objective optimization algorithms 
+									with three special characteristics: fast non-dominated sorting approach, fast crowded distance estimation procedure and simple crowded 
+									comparison operator. Process parameters such as length, width, thickness are the considerable conditions in order to optimize the robotic 
+									hand in minimizing or maximizing the machining performances. Generally, NSGA-II can be roughly detailed as following steps. </p>
+
+								<p>Step 1: Population initialization Initialize the population based on the problem range and constraint. </p>
+								<p>Step 2: Non dominated sort Sorting process based on non domination criteria of the population that has been initialized. </p>
+								<p>Step 3: Crowding distance Once the sorting is complete, the crowding distance value is assigned front wise. The individuals
+									 in the population are selected based on rank and crowding distance. </p>
+								<p>Step 4: Selection The selection of individuals is carried out using a binary tournament selection with a crowded-comparison operator. 
+								</p>
+								<p>Step 5: Genetic Operators Real coded GA using simulated binary crossover and polynomial mutation.</p>
+								<p>Step 6: Recombination and selection Offspring population and current generation population are combined and the individuals of the next generation are set by selection. The new generation is filled by each front subsequently until the population size exceeds the current population size. 
+								</p>
+
+								<p>NSGA II Algorithm in soft hand optimization: NSGA II algorithm has been incorporated to provide fast and accurate 
+									results</p>
+
+								<footer>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<p class="copyright">&copy; By: Michael DeCapua, Santhosh Lakshmanan, Subhraneel Sarkar, and Vijay Veerisetty.
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
