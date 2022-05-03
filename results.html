@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Results</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">AMDS Project</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="design.html">Design</a></li>
+								<li><a href="simulation.html">Simulation</a></li>
+								<li><a href="optimization.html">Optimization</a></li>
+								<li><a href="fitness_function.html">Fitness Function</a></li>
+								<li><a href="results.html">Results</a></li>
+								<li><a href="reference.html">Reference</a></li>
+								<li><a href="appendix.html">Appendix</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Results</a></h2>
+										<p>A case study for testing GA's on soft robotic actuators.</p>
+									</div>
+								</header>
+								<center><img src="images/matlabgraph.jpg" alt="" />
+									<p>FIG 9: Final Result</p></center>
+									<p>The graph shows fitness values in terms of pressure versus fitness values in terms of bending angle. This plot is created for every generation of populations. We have used 5 populations and 100 generations but this plot created for each generation of the algorithm. </p>
+
+									<center><img src="images/1111.jpg" alt="" /> <img src="images/22222.jpg" alt="" /> <img src="images/33333.jpg" alt="" />
+									<p>FIG 10: Optimizated Finger</p></center>
+									<p>The above shown images are the initial and optimized fingers that we got from the NSGA code. We feel its not correct yet as some changes in the code are required which we will do in the next few days. Below is a short video showing how the NSGA-II code and MATLAB-ABAQUS interfacing works.</p>
+									<video controls width="500"><source src="images/AMDS_3.mp4" type="video/mp4"></video>
+
+									<p>Limitations and future work:</p>
+								<p>One of the limitations right now is that the ABAQUS.rpt only contains the deflection values. Now, we intend to create a fitness function that will maximize the bending and minimize the prescribed pressure. Although we did create a history output that contains the pressure values as well as the deflection values, the python script was unable to create the report file via history output. It only allowed us to create .rpt files using field output variables which does not have the pressure change. So, for now, our pressure is constant and the shape of the finger changes based on the maximum deflection only. 
+									In near future, we will try to evolve our fitness functions (bending angle and pressure) and update the NSGA code subsequently. We will even add a blocking force fitness function and will try to maximize that as well. Hopefully, after this, we will try to optimize actuators with complex geometries for future research work.
+								</p>
+
+								<p>Future Testing Plan and Fabrication</p>
+								<ul>
+									<li>After manufacturing this prototype, there will be an experimental set up for comparsion of simulation results.</li>
+									<li>For the angular displacement, a board of angular displacement will be shown in comparsion from initial to final flexural displacement of the system.</li>
+									<li>In terms of testing input pressure, there will be a prototype to test for failure to state the maximum pressure that the resulting component would fail at.</li>
+								</ul>
+								<footer>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<p class="copyright">&copy; By: Michael DeCapua, Santhosh Lakshmanan, Subhraneel Sarkar, and Vijay Veerisetty.
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
